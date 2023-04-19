@@ -15,7 +15,7 @@ function alphabetPosition(text) {
     let array = text.split("")
     console.log(array)
     let newArray = []
-    array.forEach((x,y) => {
+    array.forEach(x => {
       newLetter = x.toLowerCase()
       if (/[a-z]/.test(newLetter)){
         newArray.push(newLetter.charCodeAt(0) - 96)
