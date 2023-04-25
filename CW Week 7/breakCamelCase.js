@@ -7,6 +7,6 @@
 // "identifier"   =>  "identifier"
 // ""             =>  ""
 
-function breakCamelCase(str) {
-    return str.replace(/[A-Z]/g, match => " " + match);
-  }
+function solution(string) {
+  return string.replace(/([a-z])([A-Z])/g, '$1 $2');
+}
