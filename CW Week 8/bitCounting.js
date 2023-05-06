@@ -6,7 +6,7 @@
   
   
 let countBits = function(n) {
-    let num = (n >>> 0).toString(2)
+    let num = n.toString(2)
     let array = num.split("")
     return array.reduce((a,b) => Number(a)+Number(b),0)
   };
