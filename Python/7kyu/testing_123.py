@@ -27,3 +27,11 @@ def number(lines):
 
 def number(lines):
     return [f"{counter}: {line}" for counter, line in enumerate(lines, start=1)]
+
+
+def number(lines):
+    x = 1
+    for i in range(len(lines)):
+        lines[i] = str(x) + ": " + lines[i]
+        x+=1
+    return lines
