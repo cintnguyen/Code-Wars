@@ -16,10 +16,14 @@ def number(lines):
     arr = []
     i = 1
     for v in lines:
-        if v == "":
-            arr.append(f"{i}: {v}")   
-            i = i + 1
-        else:
-            arr.append(f"{i}: {v}")
-            i = i + 1
+        arr.append(f"{i}: {v}")
+        i = i + 1
     return arr
+
+
+def number(lines):
+  return ['%d: %s' % v for v in enumerate(lines, 1)]
+
+
+def number(lines):
+    return [f"{counter}: {line}" for counter, line in enumerate(lines, start=1)]
