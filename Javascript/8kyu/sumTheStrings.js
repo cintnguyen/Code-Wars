@@ -12,6 +12,10 @@
 // "-5", "3" --> "-2"
 
 function sumStr(a,b) {
+    return String(Number(a)+Number(b));
+}
+
+function sumStr(a,b) {
     let tot = Number(a) + Number(b)
     return tot.toString()
 }
