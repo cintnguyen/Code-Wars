@@ -33,3 +33,11 @@ function remove(s, n) {
     }
     return result;
 }
+
+function remove(s,n){
+    while(n) {
+      s = s.replace("!", "");
+      n--;
+    }
+    return s;
+}
