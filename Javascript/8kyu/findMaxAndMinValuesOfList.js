@@ -9,7 +9,21 @@
 // * [42, 54, 65, 87, 0]             -> min = 0, max = 87
 // * [5]                             -> min = 5, max = 5
 
-const min = function(list){
+// Solution 1
+const min = (list) => Math.min(...list);
+const max = (list) => Math.max(...list);
+
+// Solution 2
+const minn = function(list){
+    return Math.min(...list)
+}
+
+const maxx = function(list){
+    return Math.max(...list)
+}
+
+// Solution 3
+const minnn = function(list){
     let num = list[0]
     list.forEach(x =>{
         if(x < num){
@@ -19,7 +33,7 @@ const min = function(list){
     return num
 }
 
-const max = function(list){
+const maxxx = function(list){
     let num = list[0]
     list.forEach(x =>{
         if(x > num){
